@@ -7,21 +7,21 @@ public class WordGame {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out.print("Въведете желания брой редове: ");
+		System.out.print("Enter number of rows: ");
 		int rows = input.nextInt();
-		System.out.print("Въведете желания брой колони: ");
+		System.out.print("Enter number of columns: ");
 		int columns = input.nextInt();
 
 		char[][] array = new char[rows][columns];
 
-		System.out.println("Въведете таблицата с букви.");
+		System.out.println("Еnter word table.");
 		for (int row = 0; row < rows; row++) {
 			for (int column = 0; column < columns; column++) {
 				array[row][column] = input.next().charAt(0);
 			}
 		}
 
-		System.out.println("Въведете търсената дума: ");
+		System.out.println("Enter searched word: ");
 		String word = input.next();
 
 		input.close();
