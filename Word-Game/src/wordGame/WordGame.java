@@ -14,7 +14,7 @@ public class WordGame {
 
 		char[][] array = new char[rows][columns];
 
-		System.out.println("Ånter word table.");
+		System.out.println("Enter word table.");
 		for (int row = 0; row < rows; row++) {
 			for (int column = 0; column < columns; column++) {
 				array[row][column] = input.next().charAt(0);
