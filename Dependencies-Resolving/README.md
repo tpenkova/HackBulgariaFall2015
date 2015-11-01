@@ -1,1 +1,1 @@
-Work in progress.
+Set the path to the dependencies folder in the FileManager class.
