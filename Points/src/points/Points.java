@@ -14,25 +14,25 @@ public class Points {
 
 		input.close();
 
-		int sign = 1;
+		int step = 1;
 		char[] directionList = directions.toCharArray();
 
 		for (int i = 0; i < directionList.length; i++) {
 			switch (directionList[i]) {
 			case '>':
-				x += sign;
+				x += step;
 				break;
 			case '<':
-				x -= sign;
+				x -= step;
 				break;
 			case '^':
-				y -= sign;
+				y -= step;
 				break;
 			case 'v':
-				y += sign;
+				y += step;
 				break;
 			case '~':
-				sign *= -1;
+				step *= -1;
 				break;
 			}
 		}
